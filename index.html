@@ -63,7 +63,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:18px 48px;display:fl
 .hpc::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;transform:scaleY(0);transform-origin:bottom;transition:transform .3s;}
 .hpc-rtu::before{background:var(--sun);}
 .hpc-bio::before{background:#2e86c1;}
-.hpc-ai::before{background:var(--green);}
+.hpc-social::before{background:#8b44e8;}
+.hpc-social .hpc-label{color:#8b44e8;}
 .hpc:hover{background:var(--ink);border-color:var(--ink);}
 .hpc:hover::before{transform:scaleY(1);}
 .hpc-num{font-family:'Syne',sans-serif;font-weight:800;font-size:2.8rem;color:rgba(20,18,16,0.07);line-height:1;transition:color .25s;}
@@ -259,7 +260,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;justify-content:spac
       <span class="r">Sale Para</span><br>
       <span class="s">Todos.</span>
     </h1>
-    <p class="hero-p">Tecnología de código abierto con materiales reciclados. Investigación científica del origen de la vida. Inteligencia artificial democrática en hardware doméstico.</p>
+    <p class="hero-p">Tecnología de código abierto con materiales reciclados. Investigación científica del origen de la vida. Inteligencia artificial democrática en hardware doméstico. Termodinámica Social aplicada al sistema global.</p>
     <div class="hero-actions">
       <a href="#proyectos" class="btn btn-dark">Ver proyectos ↓</a>
       <a href="https://link.mercadopago.com.ar/holybot" target="_blank" class="btn btn-sun">☀ Donar</a>
@@ -304,18 +305,32 @@ footer{background:var(--ink);padding:32px 48px;display:flex;justify-content:spac
         <div class="hpc-stat-unit">Costo operativo</div>
       </div>
     </a>
+    <a href="#social" class="hpc hpc-social" onclick="tog('social')">
+      <div class="hpc-num">04</div>
+      <div>
+        <div class="hpc-label">Teoría · Dossier disponible</div>
+        <div class="hpc-name">Termodinámica Social</div>
+        <div class="hpc-sub">Cosmos Vector Fractal · Sistema global · Homo Elfus</div>
+      </div>
+      <div class="hpc-stat">
+        <div class="hpc-stat-val">V2</div>
+        <div class="hpc-stat-unit">Dossier publicado</div>
+      </div>
+    </a>
   </div>
 </section>
 
 <!-- MARQUEE -->
 <div class="mq">
   <div class="mq-track">
+    <span class="mq-item">Termodinámica Social <span>V2 publicado</span></span>
     <span class="mq-item">Sistema RTU <span>73°C probados</span></span>
     <span class="mq-item">Código 100% abierto</span>
     <span class="mq-item">IA en hardware doméstico <span>costo $0</span></span>
     <span class="mq-item">El sol no tiene dueño</span>
     <span class="mq-item">Preprint disponible <span>DOI citable</span></span>
     <span class="mq-item">Tecnología desde la basura</span>
+    <span class="mq-item">Termodinámica Social <span>V2 publicado</span></span>
     <span class="mq-item">Sistema RTU <span>73°C probados</span></span>
     <span class="mq-item">Código 100% abierto</span>
     <span class="mq-item">IA en hardware doméstico <span>costo $0</span></span>
@@ -407,7 +422,7 @@ footer{background:var(--ink);padding:32px 48px;display:flex;justify-content:spac
         <div class="lib-title">Biblioteca</div>
         <div class="dl-list">
           <a href="#" class="dl-item"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Paper — Helical Polymerization (EN)</span></div><span class="dl-arr">↓</span></a>
-          <a href="#" class="dl-item"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Dossier Cosmos Vector Fractal V3 (ES)</span></div><span class="dl-arr">↓</span></a>
+          <a href="#" class="dl-item"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Dossier Cosmos Vector Fractal V4 (ES)</span></div><span class="dl-arr">↓</span></a>
           <a href="#" class="dl-item"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Anexo I — El Tornillo Sin Fin</span></div><span class="dl-arr">↓</span></a>
           <a href="#" class="dl-item"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Protocolo experimental completo</span></div><span class="dl-arr">↓</span></a>
           <div class="dl-soon">Anexo II — UV y Calor (en redacción)</div>
@@ -454,14 +469,12 @@ footer{background:var(--ink);padding:32px 48px;display:flex;justify-content:spac
       </div>
     </div>
   </div>
-</section>
-
-<!-- NUMBERS -->
+  <!-- SOCIAL -->\n  <div class="proj reveal" id="social">\n    <div class="proj-head" onclick="tog('social')">\n      <div class="proj-n">04</div>\n      <div class="proj-info">\n        <span class="proj-badge" style="background:rgba(139,68,232,0.08);color:#8b44e8;border:1px solid rgba(139,68,232,0.2);">Investigación activa</span>\n        <div class="proj-name">Termodinámica Social</div>\n        <div class="proj-tagline">Por qué el sistema global colapsa y por qué la física ya tiene la respuesta</div>\n      </div>\n      <div class="proj-toggle">Explorar <span class="proj-arrow" id="arr-social">↓</span></div>\n    </div>\n    <div class="proj-body" id="bd-social">\n      <div class="proj-body-l">\n        <p class="proj-desc">Las ciencias sociales y la economía fallan porque intentan explicar sistemas físicos con herramientas que ignoran la física. Una sociedad es un sistema disipativo complejo gobernado por las mismas leyes que la atmósfera terrestre y los océanos. El gasto militar global ($2,7 billones en 2024) es fricción pura. Con el 11% alcanza para eliminar la pobreza extrema global. El Homo Elfus no es fantasía: es el destino termodinámico de una civilización que deja de quemarse a sí misma.</p>\n        <ul class="proj-list">\n          <li>El sistema global opera en régimen turbulento extremo — predecible desde la física de fluidos</li>\n          <li>Corrupción = disipación de energía, no problema moral</li>\n          <li>Todas las soluciones actuales generan más turbulencia — error epistemológico de base</li>\n          <li>$2,7 billones en defensa vs $300 mil millones para eliminar la pobreza</li>\n          <li>El Homo Elfus como atractor termodinámico: destino físico, no utopía</li>\n          <li>Conexión con Cosmos Vector Fractal: el mismo principio en todas las escalas</li>\n        </ul>\n        <a href="#" class="btn btn-dark" style="font-size:.68rem;">Ver dossier →</a>\n      </div>\n      <div class="proj-body-r">\n        <div class="lib-title">Biblioteca</div>\n        <div class="dl-list">\n          <a href="#" class="dl-item"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Dossier Termodinámica Social V1 (ES)</span></div><span class="dl-arr">↓</span></a>\n          <a href="#" class="dl-item"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Dossier Termodinámica Social V2 — Homo Elfus (ES)</span></div><span class="dl-arr">↓</span></a>\n          <div class="dl-soon">Preprint Zenodo — DOI citable (próximamente)</div>\n          <div class="dl-soon">Tomo I — Tratado completo (en redacción)</div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>
 <div class="numbers reveal">
   <div class="num-item"><div class="num-val">73°C</div><div class="num-label">Temperatura máxima RTU en campo real</div></div>
   <div class="num-item"><div class="num-val">~30W</div><div class="num-label">Generación continua 24h sistema ORC</div></div>
   <div class="num-item"><div class="num-val">4</div><div class="num-label">Agentes IA activos en hardware doméstico</div></div>
-  <div class="num-item"><div class="num-val">11</div><div class="num-label">Principios metodológicos originales</div></div>
+  <div class="num-item"><div class="num-val">11%</div><div class="num-label">Del gasto militar basta para eliminar la pobreza global</div></div>
 </div>
 
 <!-- INSTITUTIONAL -->
