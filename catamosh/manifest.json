@@ -1,0 +1,23 @@
+{
+  "name": "Catamosh - Comunicación Sensorial",
+  "short_name": "Catamosh",
+  "description": "Herramienta libre de comunicación y estimulación sensorial",
+  "start_url": "/Hijosdelabasura/catamosh/index.html",
+  "scope": "/Hijosdelabasura/catamosh/",
+  "display": "standalone",
+  "background_color": "#0f1a0f",
+  "theme_color": "#f9d342",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/Hijosdelabasura/catamosh/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Hijosdelabasura/catamosh/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
