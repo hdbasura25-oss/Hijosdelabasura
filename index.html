@@ -305,8 +305,20 @@ footer{background:var(--ink);padding:32px 48px;display:flex;justify-content:spac
         <div class="hpc-stat-unit">Costo operativo</div>
       </div>
     </a>
+    <a href="#pelicano" class="hpc" style="--hpc-color:#1a8a4a;" onclick="tog('pelicano')">
+      <div class="hpc-num">09</div>
+      <div>
+        <div class="hpc-label" style="color:var(--green);">Conservación · Preprint disponible</div>
+        <div class="hpc-name">Pelícano-UAV</div>
+        <div class="hpc-sub">UAV biomimético · Vigilancia de ecosistemas · Turbina 4 modos</div>
+      </div>
+      <div class="hpc-stat">
+        <div class="hpc-stat-val">4</div>
+        <div class="hpc-stat-unit">Modos de turbina</div>
+      </div>
+    </a>
     <a href="#catamosh" class="hpc" style="--hpc-color:#f9d342;" onclick="tog('catamosh')">
-      <div class="hpc-num">05</div>
+      <div class="hpc-num">10</div>
       <div>
         <div class="hpc-label" style="color:#f9d342;">App · Comunicación aumentativa</div>
         <div class="hpc-name">CATAMOSH</div>
@@ -339,14 +351,17 @@ footer{background:var(--ink);padding:32px 48px;display:flex;justify-content:spac
     <span class="mq-item">Sistema RTU <span>73°C probados</span></span>
     <span class="mq-item">Código 100% abierto</span>
     <span class="mq-item">IA en hardware doméstico <span>costo $0</span></span>
+    <span class="mq-item">Pelícano-UAV <span>preprint disponible</span></span>
     <span class="mq-item">El sol no tiene dueño</span>
     <span class="mq-item">Preprint disponible <span>DOI citable</span></span>
     <span class="mq-item">CATAMOSH <span>App libre para autismo</span></span>
+    <span class="mq-item">TP53 Antinodos <span>en revisión editorial</span></span>
     <span class="mq-item">Tecnología desde la basura</span>
     <span class="mq-item">Termodinámica Social <span>V2 publicado</span></span>
     <span class="mq-item">Sistema RTU <span>73°C probados</span></span>
     <span class="mq-item">Código 100% abierto</span>
     <span class="mq-item">IA en hardware doméstico <span>costo $0</span></span>
+    <span class="mq-item">Pelícano-UAV <span>preprint disponible</span></span>
     <span class="mq-item">El sol no tiene dueño</span>
     <span class="mq-item">Preprint disponible <span>DOI citable</span></span>
     <span class="mq-item">Tecnología desde la basura</span>
@@ -396,10 +411,10 @@ footer{background:var(--ink);padding:32px 48px;display:flex;justify-content:spac
       <div class="proj-body-r">
         <div class="lib-title">Biblioteca</div>
         <div class="dl-list">
-          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/Herrero_2026_Seccion6_IDD_Economia_Disipativa.docx" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">DOCX</span><span class="dl-name">Manual completo RTU v1.0</span></div><span class="dl-arr">↓</span></a>
-          <a href="#" class="dl-item"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Planos colector PET reciclado</span></div><span class="dl-arr">↓</span></a>
-          <a href="#" class="dl-item"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Carta al Arzobispado de Córdoba</span></div><span class="dl-arr">↓</span></a>
-          <a href="#" class="dl-item"><div class="dl-item-l"><span class="dl-type">ZIP</span><span class="dl-name">Código Arduino — control ORC</span></div><span class="dl-arr">↓</span></a>
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/RTU_Herrero_2026_v4.pdf" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Manual completo RTU v4 (ES)</span></div><span class="dl-arr">↓</span></a>
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/RTU_Herrero_2026_EN.pdf" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">RTU System (EN)</span></div><span class="dl-arr">↓</span></a>
+          <div class="dl-soon">Carta al Arzobispado de Córdoba (en redacción)</div>
+          <div class="dl-soon">Código Arduino — control ORC (próximamente)</div>
           <div class="dl-soon">Datos de campo Córdoba 2025 (próximamente)</div>
           <div class="dl-soon">Video ensamblaje paso a paso (próximamente)</div>
         </div>
@@ -525,10 +540,151 @@ footer{background:var(--ink);padding:32px 48px;display:flex;justify-content:spac
   </div>
 </section>
 
-  <!-- CATAMOSH -->
+  <!-- TP53 -->
+  <div class="proj reveal" id="tp53">
+    <div class="proj-head" onclick="tog('tp53')">
+      <div class="proj-n">06</div>
+      <div class="proj-info">
+        <span class="proj-badge b-research">En revisión editorial</span>
+        <div class="proj-name">Antinodos TP53</div>
+        <div class="proj-tagline">Validación estadística del modelo de Polimerización Helicoidal sobre la base de datos IARC</div>
+      </div>
+      <div class="proj-toggle">Explorar <span class="proj-arrow" id="arr-tp53">↓</span></div>
+    </div>
+    <div class="proj-body" id="bd-tp53">
+      <div class="proj-body-l">
+        <p class="proj-desc">Análisis estadístico de antinodos en el gen TP53 contra la base de datos IARC (15.878 mutaciones somáticas, 4.174 mutaciones germinales patogénicas). El resultado es una doble disociación con significancia estadística extrema, la primera validación empírica del modelo V7 de Polimerización Helicoidal. Donde el modelo predice fragilidad estructural, aparece el daño somático; donde predice protección, aparece la conservación germinal.</p>
+        <ul class="proj-list">
+          <li>n = 15.878 mutaciones somáticas + 4.174 germinales patogénicas (IARC)</li>
+          <li>Doble disociación: Z = −8.59 y Z = −14.92, p &lt; 0.0001</li>
+          <li>Primera validación empírica del modelo Helical Polymerization V7</li>
+          <li>Los antinodos como puntos de fragilidad estructural predicha por el modelo</li>
+          <li>Conexión directa entre dinámica vibracional del ADN y patrón de mutación real</li>
+          <li>Actualmente en revisión editorial en revista científica</li>
+        </ul>
+        <a href="#" class="btn btn-dark" style="font-size:.68rem;">Ver preprint →</a>
+      </div>
+      <div class="proj-body-r">
+        <div class="lib-title">Biblioteca</div>
+        <div class="dl-list">
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/Herrero_2026_TP53_Antinode_v1.docx" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">DOCX</span><span class="dl-name">TP53 Antinode Analysis v1</span></div><span class="dl-arr">↓</span></a>
+          <div class="dl-soon">Preprint Zenodo — DOI citable (en revisión editorial)</div>
+          <div class="dl-soon">Dataset y código de análisis (próximamente)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLD FUSION / TRITIO -->
+  <div class="proj reveal" id="tritio">
+    <div class="proj-head" onclick="tog('tritio')">
+      <div class="proj-n">07</div>
+      <div class="proj-info">
+        <span class="proj-badge" style="background:rgba(46,134,193,0.08);color:#2e86c1;border:1px solid rgba(46,134,193,0.15);">Diseño conceptual</span>
+        <div class="proj-name">Motor de Fusión Fría desde Residuos Radioactivos</div>
+        <div class="proj-tagline">Reactor híbrido de transmutación pasiva y cría de tritio con uranio reciclado</div>
+      </div>
+      <div class="proj-toggle">Explorar <span class="proj-arrow" id="arr-tritio">↓</span></div>
+    </div>
+    <div class="proj-body" id="bd-tritio">
+      <div class="proj-body-l">
+        <p class="proj-desc">Sistema conceptual de tres etapas integradas: transmutación pasiva de residuos radioactivos, producción de combustible D-T, y confinamiento de fusión en un ducto de tungsteno. Usa uranio reciclado como fuente neutrónica dirigida por geometría en lugar de bombardeo probabilístico, cápsulas de tungsteno encapsuladas en LiF como reflector y medio de cría, y litio líquido como blanco de extracción de tritio. Simulaciones Monte Carlo con OpenMC y datos nucleares ENDF/B-VIII.1.</p>
+        <ul class="proj-list">
+          <li>Mejor TBR (Tritium Breeding Ratio) obtenido: 0.8412</li>
+          <li>Fuga neutrónica mínima — 0.37%</li>
+          <li>Ducto de tungsteno amplifica reacciones D-T en 2.52×</li>
+          <li>Simulación Monte Carlo: OpenMC 0.15.3, ENDF/B-VIII.1</li>
+          <li>Uranio reciclado como fuente neutrónica — geometría dirigida, no bombardeo probabilístico</li>
+          <li>Preprints bilingües preparados para IAEA, ITER, INVAP, CNEA, Sandia</li>
+        </ul>
+        <a href="#" class="btn btn-dark" style="font-size:.68rem;">Ver preprint →</a>
+      </div>
+      <div class="proj-body-r">
+        <div class="lib-title">Biblioteca</div>
+        <div class="dl-list">
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/Herrero_2026_Cold_Fusion_Engine_Radioactive_Waste.docx" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">DOCX</span><span class="dl-name">Cold Fusion Engine (EN)</span></div><span class="dl-arr">↓</span></a>
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/Herrero_2026_Motor_Fusion_Fria_Residuos_v2.docx" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">DOCX</span><span class="dl-name">Motor de Fusión Fría v2 (ES)</span></div><span class="dl-arr">↓</span></a>
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/dosier_tritio_v3_final.docx" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">DOCX</span><span class="dl-name">Dosier Tritio v3 (final)</span></div><span class="dl-arr">↓</span></a>
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/dosier_tritio_v2.docx" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">DOCX</span><span class="dl-name">Dosier Tritio v2</span></div><span class="dl-arr">↓</span></a>
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/dosier_tritio_conceptual.docx" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">DOCX</span><span class="dl-name">Dosier Tritio — conceptual</span></div><span class="dl-arr">↓</span></a>
+          <div class="dl-soon">Preprint Zenodo — DOI citable (v2)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NACIONES UNIDAS DEL QUINTO SOL -->
+  <div class="proj reveal" id="andina">
+    <div class="proj-head" onclick="tog('andina')">
+      <div class="proj-n">08</div>
+      <div class="proj-info">
+        <span class="proj-badge" style="background:rgba(139,68,232,0.08);color:#8b44e8;border:1px solid rgba(139,68,232,0.2);">Ensayo publicado</span>
+        <div class="proj-name">Naciones Unidas del Quinto Sol</div>
+        <div class="proj-tagline">La integración andina como imperativo logístico, geopolítico y civilizatorio</div>
+      </div>
+      <div class="proj-toggle">Explorar <span class="proj-arrow" id="arr-andina">↓</span></div>
+    </div>
+    <div class="proj-body" id="bd-andina">
+      <div class="proj-body-l">
+        <p class="proj-desc">Ensayo que explora la hipótesis de que la fragmentación política entre Ecuador, Perú y Bolivia constituye una anomalía histórica, logística y geopolítica más que una consecuencia inevitable de la evolución de los pueblos andinos. A partir de fuentes históricas, económicas y geopolíticas, se examinan los costos sistémicos asociados a la existencia de fronteras que interrumpen una continuidad geográfica y cultural milenaria. Parte del marco intelectual más amplio de la Economía Disipativa.</p>
+        <ul class="proj-list">
+          <li>23 referencias históricas, económicas y geopolíticas verificadas</li>
+          <li>La fragmentación política como fricción sistémica, no destino natural</li>
+          <li>Continuidad geográfica y cultural andina previa a las fronteras actuales</li>
+          <li>Costos logísticos y geopolíticos medibles de la desintegración regional</li>
+          <li>Conexión directa con el marco de Economía Disipativa / Re_s</li>
+          <li>Listo para Zenodo — CC BY-SA 4.0</li>
+        </ul>
+        <a href="#" class="btn btn-dark" style="font-size:.68rem;">Ver ensayo →</a>
+      </div>
+      <div class="proj-body-r">
+        <div class="lib-title">Biblioteca</div>
+        <div class="dl-list">
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/La_Solucion_Andina_Herrero2026.docx" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">DOCX</span><span class="dl-name">La Solución Andina (ES)</span></div><span class="dl-arr">↓</span></a>
+          <div class="dl-soon">Preprint Zenodo — DOI citable (próximamente)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PELICANO-UAV -->
+  <div class="proj reveal" id="pelicano">
+    <div class="proj-head" onclick="tog('pelicano')">
+      <div class="proj-n">09</div>
+      <div class="proj-info">
+        <span class="proj-badge" style="background:rgba(26,138,74,0.1);color:var(--green);border:1px solid rgba(26,138,74,0.2);">Preprint disponible</span>
+        <div class="proj-name">Pelícano-UAV</div>
+        <div class="proj-tagline">Plataforma aérea biomimética de largo alcance con control de flotabilidad variable</div>
+      </div>
+      <div class="proj-toggle">Explorar <span class="proj-arrow" id="arr-pelicano">↓</span></div>
+    </div>
+    <div class="proj-body" id="bd-pelicano">
+      <div class="proj-body-l">
+        <p class="proj-desc">UAV biomimético de largo alcance diseñado para guardaparques comunitarios y vigilancia de ecosistemas frente a la tala ilegal, la caza furtiva, el avance agrícola y la pesca no regulada (IUU). Fuselaje fusiforme inspirado en el pelícano, con buche como cámara de expansión de volumen variable y turbina de cuatro modos discretos: propulsión activa, generación frontal, generación trasera y vuelo de planeo puro sin consumo. Compresor y tanque de H₂ alojados en la cabeza para mantener el centro de gravedad adelantado.</p>
+        <ul class="proj-list">
+          <li>Cuatro modos de turbina discretos según fase de vuelo</li>
+          <li>Buche como cámara de expansión de volumen variable (control de flotabilidad)</li>
+          <li>Diseñado para vigilancia de ecosistemas y detección de pesca IUU</li>
+          <li>Fuselaje fusiforme biomimético — baja resistencia, largo alcance</li>
+          <li>Compresor y tanque de H₂ comprimido en la cabeza — CG adelantado</li>
+          <li>Preprints bilingües en Zenodo con diagramas técnicos y secuencia de video</li>
+        </ul>
+        <a href="#" class="btn btn-dark" style="font-size:.68rem;">Ver preprint →</a>
+      </div>
+      <div class="proj-body-r">
+        <div class="lib-title">Biblioteca</div>
+        <div class="dl-list">
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/PelicanUAV_Herrero_2026_EN_v1.pdf" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Pelican-UAV (EN)</span></div><span class="dl-arr">↓</span></a>
+          <a href="https://github.com/hdbasura25-oss/Hijosdelabasura/raw/main/PelicanoUAV_Herrero_2026_v1.pdf" class="dl-item" target="_blank"><div class="dl-item-l"><span class="dl-type">PDF</span><span class="dl-name">Pelícano-UAV (ES)</span></div><span class="dl-arr">↓</span></a>
+          <div class="dl-soon">Secuencia de video técnico (próximamente)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <div class="proj reveal" id="catamosh">
     <div class="proj-head" onclick="tog('catamosh')">
-      <div class="proj-n">05</div>
+      <div class="proj-n">10</div>
       <div class="proj-info">
         <span class="proj-badge" style="background:rgba(249,211,66,0.12);color:#c8960a;border:1px solid rgba(249,211,66,0.3);">App libre · Android</span>
         <div class="proj-name">CATAMOSH</div>
